@@ -1,3 +1,4 @@
+
 # REACT-REDUX-ROUTES-ACTIONS-REDUCERS
 
 All of the mentioned components are set up with this boilerplate, along with some simple folder organising. I made this since the boilerplates I saw elsewhere were either too complicated, based in TypeScript, or had a folder hierarchy that was more rigid than necessary for managing the application.
@@ -37,3 +38,26 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Structure
+Folder Structure is as follows:
+
+ - **public**: Has all public files and `index.html` which gets mounted.
+ - **src**: Has following parts:
+#### index.js
+Starting point of the react app. Has store and route setup.
+#### components
+Currently only `layouts` has been added. But things like error toast, notifications, sidebar etc can also be added as components here.
+#### pages
+Here is where the web app resides. It has been divided into different folders as per a feature. Currently has `App` and `Counter` folders.
+#### redux
+Has store definition, reducers, actionTypes and actions.
+
+### Counter App
+This app is accessible on route `/counter` and has a basic counter for increment, decrement and reset option. It uses counterActions and counterReducer and has end to end example on how to use it with actions and reducers.
+
+### Things to add:
+1. ajax example
+2. bootstrap integration
+3. better routing setup
+4. testing setup
