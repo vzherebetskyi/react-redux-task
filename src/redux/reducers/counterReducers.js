@@ -25,3 +25,4 @@ const setCount = ( state = initialState, action) => {
 }
 
 export default setCount;
+export {initialState};
