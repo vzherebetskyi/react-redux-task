@@ -1,11 +1,10 @@
-import { useReducer } from 'react';
-
+import { useSelector, useDispatch } from 'react-redux';
 import { addOne, decOne, addTen, decTen, resetCount } from '../../redux/actions/counterActions';
-import setCount from "../../redux/reducers/counterReducers"
-
+import React from 'react';
 
 function Counter() {
-	const [state, dispatch] = useReducer(setCount, { ele: 0 });
+  const state = useSelector((state) => state.setCount);
+  const dispatch = useDispatch();
 
   return (
     <div>
