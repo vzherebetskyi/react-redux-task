@@ -1,23 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/App/App.js';
-import Counter from './pages/Counter';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
-import store from "./redux/store";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from "react-redux";
+
+import ArticlesList from './pages/ArticlesList/ArticlesList';
+import Article from './pages/Article/Article';
+import NotFound from './pages/NotFound/NotFound';
+import store from "./redux/store";
+import './styles/global.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/counter" element={<Counter />} />
+          <Route path="/" element={<ArticlesList />} />
+          <Route path="/counter" element={<Article />} />
+          <Route path="*" element={<NotFound />} />
         </Routes> 
-      
       </BrowserRouter>
     </Provider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );

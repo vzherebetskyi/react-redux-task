@@ -1,0 +1,28 @@
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 10px;
+  }
+}
+
+.page-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.back-btn {
+  padding: 4px 8px;
+  background: none;
+  border: 1px solid #000;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
