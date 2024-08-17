@@ -2,6 +2,7 @@
 
 A challenge task built in accordance with the requirements.
 It renders a list of articles fetched using the following APIs:
+
 - NewsAPI
 - The Guardian
 - New York Times
@@ -19,6 +20,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Node Version 20+
 
 Set this as the node version.
+
+### Add .env file
+
+Create .env.development and .env.production files in the root folder and add the API keys to it.
+REACT_APP_NEWS_API_KEY=...
+REACT_APP_GUARDIAN_API_KEY=...
+REACT_APP_NYT_API_KEY=...
 
 ### `npm install`
 
@@ -41,17 +49,32 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 ## Structure
+
 Folder Structure is as follows:
 
- - **public**: Has all public files and `index.html` which gets mounted.
- - **src**: Has following parts:
+- **public**: Has all public files and `index.html` which gets mounted.
+- **src**: Has following parts:
+
 #### index.js
+
 Starting point of the react app. Has store and route setup.
+
+#### assets
+
+All images are stored in the assets folder.
+
 #### components
+
 Currently `layouts`, FilterBlock and several other reusable components have been added.
+
 #### pages
+
 Here is where the web app resides. It has been divided into different folders as per a page. Currently has `ArticlesList` and `NotFound` pages.
+
 #### redux
+
 Has store definition, reducers, actionTypes and actions.
+
 #### services
+
 Has the implementation of main requests made to the API.

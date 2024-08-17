@@ -1,0 +1,42 @@
+.section-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.filters-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+
+  p {
+    margin: 5px 10px 5px 0;
+  }
+}
+
+.filter-select {
+  min-width: 10rem;
+  max-width: 12rem;
+  margin-right: 10px;
+
+  .rmsc {
+    &:focus-within {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  .dropdown-container {
+    border: 1px solid #000;
+    &:focus-within {
+      border: 1px solid #000;
+      box-shadow: none;
+    }
+  }
+
+  .dropdown-heading {
+    height: 1.75rem;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

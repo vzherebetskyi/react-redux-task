@@ -1,0 +1,38 @@
+.section-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.input-prompt {
+  font-size: 0.9rem;
+}
+
+.filters-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+
+  p {
+    margin: 5px 10px 5px 0;
+  }
+}
+
+.rti--container {
+  border: 1px solid #000;
+  max-width: 15rem;
+  margin-right: 10px;
+}
+
+.rti--input {
+  width: 100%;
+}
+
+.common-button {
+  padding: 4px 8px;
+  background: none;
+  border: 1px solid #000;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
