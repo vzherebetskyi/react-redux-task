@@ -22,7 +22,7 @@ const ArticleCard = ({ article }) => (
         </div>
       </div>
       <div className='card-description-container'>
-        <p>{article.content}</p>
+        <p className='card-description-text'>{article.content}</p>
         <p><strong>API:</strong> {article.api}</p>
       </div>
     </div>

@@ -1,19 +1,22 @@
+# REACT-REDUX-CHALLENGE-TASK
 
-# REACT-REDUX-ROUTES-ACTIONS-REDUCERS
+A challenge task built in accordance with the requirements.
+It renders a list of articles fetched using the following APIs:
+- NewsAPI
+- The Guardian
+- New York Times
 
-All of the mentioned components are set up with this boilerplate, along with some simple folder organising. I made this since the boilerplates I saw elsewhere were either too complicated, based in TypeScript, or had a folder hierarchy that was more rigid than necessary for managing the application.
+The project has implemented search for articles by keyword and filter the results by date, category, and source. Search is done by sending the request to the API and rendering the received results. Filtering is done on the FE. Filters are formed from the results sent by the API. Search and filtering are not persistent so if you refresh the page they will be gone.
 
-I wanted something that I could start with and add to as I went along. Though it lacked redux setup and routing, `Create React App` seemed like a nice place to start. After adding those, I also included the fundamental framework for reducers and actions. Clutter is decreased and anything that didn't seem useful is deleted.
+Alongside with search and filtering it is possible to set preferences. Preferences are persistent (stored in the localStorage) and are applied when the page is loaded. So if you changed the preferences you need to refresh the page for preferences to be reapplied.
 
-This template should come in handy for hackathons or anyone wishing to quickly build up React, Redux, and routing with the bare minimum.
-
-## How to work with Create React App
+## How the project was built
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Setup
 
-### Node Version 16
+### Node Version 20+
 
 Set this as the node version.
 
@@ -37,8 +40,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ## Structure
 Folder Structure is as follows:
 
@@ -47,17 +48,10 @@ Folder Structure is as follows:
 #### index.js
 Starting point of the react app. Has store and route setup.
 #### components
-Currently only `layouts` has been added. But things like error toast, notifications, sidebar etc can also be added as components here.
+Currently `layouts`, FilterBlock and several other reusable components have been added.
 #### pages
-Here is where the web app resides. It has been divided into different folders as per a feature. Currently has `App` and `Counter` folders.
+Here is where the web app resides. It has been divided into different folders as per a page. Currently has `ArticlesList` and `NotFound` pages.
 #### redux
 Has store definition, reducers, actionTypes and actions.
-
-### Counter App
-This app is accessible on route `/counter` and has a basic counter for increment, decrement and reset option. It uses counterActions and counterReducer and has end to end example on how to use it with actions and reducers.
-
-### Things to add:
-1. ajax example
-2. bootstrap integration
-3. better routing setup
-4. testing setup
+#### services
+Has the implementation of main requests made to the API.

@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from "react-redux";
 
 import ArticlesList from './pages/ArticlesList/ArticlesList';
-import Article from './pages/Article/Article';
 import NotFound from './pages/NotFound/NotFound';
 import store from "./redux/store";
 import './styles/global.scss';
@@ -16,7 +15,6 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ArticlesList />} />
-          <Route path="/counter" element={<Article />} />
           <Route path="*" element={<NotFound />} />
         </Routes> 
       </BrowserRouter>

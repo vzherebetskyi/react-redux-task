@@ -89,6 +89,12 @@
 }
 
 .card-description-container {
+  .card-description-text {
+    height: 5rem;
+    overflow: hidden;
+    margin: 0;
+  }
+
   @media screen and (max-width: 1000px) {
     font-size: 0.9rem;
   }

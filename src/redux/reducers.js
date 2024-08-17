@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import setCount from "./reducers/counterReducers"
 import articlesReducer from "./reducers/articlesReducers";
+import filtersReducer from "./reducers/filtersReducer";
 
-const rootReducer = combineReducers({setCount, articlesReducer}); 
+const rootReducer = combineReducers({articlesReducer, filtersReducer}); 
 export default rootReducer;
