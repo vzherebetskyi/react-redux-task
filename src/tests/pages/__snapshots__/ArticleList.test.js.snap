@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ArticlesList component correctly 1`] = `
+<div>
+  <div
+    className="filter-wrapper "
+  />
+  <div
+    className="articles-wrapper"
+  >
+    <p
+      className="no-articles-message"
+    >
+      No articles found
+    </p>
+  </div>
+  <div
+    className="Toastify"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</div>
+`;

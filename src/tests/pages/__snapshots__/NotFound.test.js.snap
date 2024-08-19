@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NotFound component correctly 1`] = `
+<div>
+  <div
+    className="page-wrapper"
+  >
+    <p
+      className="page-title"
+    >
+      Page not found
+    </p>
+    <button
+      className="back-btn"
+      onClick={[Function]}
+    >
+      Go back to the articles list
+    </button>
+  </div>
+  <div
+    className="Toastify"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</div>
+`;

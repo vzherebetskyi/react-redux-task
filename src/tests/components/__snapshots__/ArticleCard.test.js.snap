@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ArticleCard component correctly 1`] = `
+<div
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <p
+    className="card-title"
+  >
+    No info
+  </p>
+  <div
+    className="card-image-container"
+  >
+    <img
+      className="card-image"
+      src={
+        {
+          "getCacheKey": [Function],
+          "process": [Function],
+        }
+      }
+    />
+  </div>
+  <div
+    className="card-info-container"
+  >
+    <div
+      className="card-info-container__author"
+    >
+      <p>
+        <span>
+          Author:
+        </span>
+         
+        No info
+      </p>
+    </div>
+    <div
+      className="card-info-container__published"
+    >
+      <p>
+        <span>
+          Published:
+        </span>
+         
+        18th August 2024
+      </p>
+    </div>
+    <div
+      className="card-info-container__source"
+    >
+      <p>
+        <span>
+          Source:
+        </span>
+         
+        No info
+      </p>
+    </div>
+  </div>
+  <div
+    className="card-description-container"
+  >
+    <p
+      className="card-description-text"
+    >
+      No info
+    </p>
+    <p>
+      <strong>
+        API:
+      </strong>
+       
+      test
+    </p>
+  </div>
+</div>
+`;

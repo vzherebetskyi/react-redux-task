@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SkeletonCard component correctly 1`] = `
+<div
+  className="card-wrapper"
+>
+  <p
+    className="card-title"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton"
+        style={{}}
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </p>
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton"
+      style={
+        {
+          "height": 100,
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>
+  <div
+    className="card-info-container"
+  >
+    <div
+      className="card-info-container__author"
+    >
+      <p>
+        <span
+          aria-busy={true}
+          aria-live="polite"
+        >
+          <span
+            className="react-loading-skeleton"
+            style={{}}
+          >
+            ‌
+          </span>
+          <br />
+        </span>
+      </p>
+    </div>
+    <div
+      className="card-info-container__published"
+    >
+      <p>
+        <span
+          aria-busy={true}
+          aria-live="polite"
+        >
+          <span
+            className="react-loading-skeleton"
+            style={{}}
+          >
+            ‌
+          </span>
+          <br />
+        </span>
+      </p>
+    </div>
+    <div
+      className="card-info-container__source"
+    >
+      <p>
+        <span
+          aria-busy={true}
+          aria-live="polite"
+        >
+          <span
+            className="react-loading-skeleton"
+            style={{}}
+          >
+            ‌
+          </span>
+          <br />
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    className="card-description-container"
+  >
+    <p>
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton"
+          style={{}}
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton"
+          style={{}}
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton"
+          style={{}}
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </p>
+    <p>
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton"
+          style={{}}
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </p>
+  </div>
+</div>
+`;

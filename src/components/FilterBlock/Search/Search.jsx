@@ -26,7 +26,6 @@ const Search = () => {
         type="text"
         name="search-articles"
         onChange={handleSearchArticles}
-        // data-testid="base-input"
       />
       <p className="input-prompt">* when input is empty the default search is applied (i.e. 'world news')</p>
     </div>
