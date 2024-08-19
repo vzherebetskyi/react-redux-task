@@ -59,13 +59,13 @@ Create .env file in the root directory and copy env variables to it (it will be 
 Run command `docker build -t <container-name> .`
 
 Run command
-`docker run \`
-`-it \`  
- `--rm \`
-`-v ${PWD}:/app \`
-`-p 3001:3000 \`
-`-e CHOKIDAR_USEPOLLING=true \`
-`<container-name>`
+`docker run \`<br>
+`-it \` <br>
+`--rm \`<br>
+`-v ${PWD}:/app \`<br>
+`-p 3001:3000 \`<br>
+`-e CHOKIDAR_USEPOLLING=true \`<br>
+`<container-name>`<br>
 
 Open http://localhost:3001/
 
