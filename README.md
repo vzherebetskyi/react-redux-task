@@ -48,6 +48,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+### `npm test`
+
+To run tests for the project.
+
 ## Structure
 
 Folder Structure is as follows:
@@ -78,3 +82,7 @@ Has store definition, reducers, actionTypes and actions.
 #### services
 
 Has the implementation of main requests made to the API.
+
+#### services
+
+Folder with tests for the project.

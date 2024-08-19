@@ -51,7 +51,7 @@ const NYTApiArticleObject = [
     news_desk: 'Foreign',
     print_page: '12',
     print_section: 'A',
-    pub_date: '2024-07-02T21:30:02+0000',
+    pub_date: '2024-07-02T19:30:02+0000',
     section_name: 'World',
     snippet:
       'A news report used a hidden camera to show members of the youth arm of Brothers of Italy glorifying fascism.',
@@ -130,7 +130,7 @@ test('should correctly convert data 3 (NYT API)', () => {
         category: 'World',
         content:
           'A news report used a hidden camera to show members of the youth arm of Brothers of Italy glorifying fascism.',
-        publishedAt: '2024-07-02T21:30:02+0000',
+        publishedAt: '2024-07-02T19:30:02+0000',
         source: 'The New York Times',
         title: 'Meloni Condemns Fascist Nostalgia Amid Scandal in Her Party’s Youth Wing',
         unifiedDate: '2nd July 2024',
