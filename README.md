@@ -100,6 +100,6 @@ Has store definition, reducers, actionTypes and actions.
 
 Has the implementation of main requests made to the API.
 
-#### services
+#### tests
 
 Folder with tests for the project.
