@@ -52,6 +52,23 @@ Your app is ready to be deployed!
 
 To run tests for the project.
 
+## Start Docker container
+
+Create .env file in the root directory and copy env variables to it (it will be sent to you in a separate message).
+
+Run command `docker build -t <container-name> .`
+
+Run command
+'docker run \
+ -it \
+ --rm \
+ -v ${PWD}:/app \
+ -p 3001:3000 \
+ -e CHOKIDAR_USEPOLLING=true \
+ <container-name>'
+
+Open http://localhost:3001/
+
 ## Structure
 
 Folder Structure is as follows:
